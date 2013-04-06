@@ -1624,7 +1624,7 @@ function SmartAI:filterEvent(event, player, data)
 			end
 		end
 		
-		if from and to and to:hasSkills("longdan+chongzhen") and (card:isKindOf("AOE") or card:isKindOf("Slash")) then
+		if from and to and to:hasSkills("longdan") and to:hasSkill("chongzhen") and (card:isKindOf("AOE") or card:isKindOf("Slash")) then
 			sgs.chongzhen_target = from
 		end
 		
